@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'bootstrap-sass', '2.1'
+gem 'sqlite3', '1.3.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -22,7 +23,6 @@ end
 
 group :devlopement do
   gem 'rspec-rails'
-  gem 'sqlite3', '1.3.6'
 end
 
 group :test do
