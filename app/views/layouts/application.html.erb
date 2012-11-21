@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Crmapp</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Twitter like sample app | <%= @title %></title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= stylesheet_link_tag    "custom", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <%= render 'layouts/header' %>
+    <div class="container">
+	<div class="content">
+      <%= yield %>
+	</div>
+    </div>
+	<%= render 'layouts/footer' %>
+  </body>
 </html>
