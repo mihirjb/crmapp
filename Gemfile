@@ -20,24 +20,23 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :devlopement do
+group :development do
   gem 'rspec-rails'
-  gem 'sqlite3'
-  
+  gem 'sqlite3', '1.3.6'
 end
 
 group :test do
   gem 'rspec-rails'
   gem 'spork'
+  gem 'webrat' 
   gem 'autotest'
-  gem 'webrat'
-end
 
-group :production do
-  gem 'pg', '0.12.2'
 end
 
 gem 'jquery-rails'
+group :production do
+  gem 'pg', '0.12.2'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
